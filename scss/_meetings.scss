@@ -1,0 +1,167 @@
+#horseEventsSection {
+	background-color: #dad9db;
+	padding: 0 10px;
+}
+
+#meetingsBanner {
+	@include banners(#3399ff, #fff);
+}
+
+#horseRacingBanner {
+	@include banners(#fff, #000);
+}
+.nav-tab {
+		@include flexSetOrig;
+		border-bottom: 1px solid #ddd;
+		margin: 0;
+		li {
+			background-color: #b4bfc5;
+			display: inline;
+			padding: 10px;
+			text-align: center;
+			width: 50%;
+			a {
+				color: blue;
+				text-decoration: none;
+			}
+			&.active {
+				background-color: #fff;
+				a {
+					color: blue;
+				}
+			}
+		}
+	}
+.nav {
+	padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.races {
+	background-color: #fff;
+	.race-dropDown {
+		header {
+			//display: block;
+			padding: 15px;
+			background-color: #000c2c;
+			margin-bottom: 1px;
+			// width: 100%;			
+			h4 {
+				margin: 0;
+				//width: 90%;
+			}
+			a {
+				// width: 10%;
+			}
+		}
+		section {
+			// background-color: #fff;
+			padding: $minDistance;
+			// width: 100%;
+			// display: block;
+			&.horseRacingBox {
+				border: $borderBox;
+				header {
+					border-bottom: $borderBox;
+					margin-bottom: 0;
+				}
+				article {
+					// border-bottom: $borderBox; // reuso de border a traves de #-{}
+					border: $borderBox;
+					border-top: 0;
+					padding: 10px;
+					.horseProfile {
+						@include flexSetOrig;
+						.number {
+							width: 20%,
+						}
+					}
+					.betProfile {
+						@include flexSetOrig;
+						padding: 10px 0;
+						//width: 100%;
+						.tshirt {
+							// height: 29px;
+							position: relative;
+							width: 15%;
+						}
+						ul {
+							width: 65%;
+							line-height: $minDistance + 5;
+							list-style-type: none;
+							margin: 0;
+							padding-left: $minDistance;
+						}
+						div:last-child {
+							margin: 0;
+						}
+					}
+				}
+			}
+			header {
+				// width: 100%;
+				// padding: 15px;
+				background-color: #3399ff; // crear variable que se llame $sceondaryColor
+				// margin-bottom: 1px;
+				// width: 100%;				
+				h4 {
+					// margin: 0;
+					// width: 90%;
+				}
+				a {
+					// width: 10%;
+				}
+			}
+			aside {
+				background-color: #fee9ca;
+				color: #c97827;
+				border: 1px solid #c97827;
+				border-radius: 4px;
+				margin: 10px 0;
+				padding: 0 5px;
+				text-align: center;
+				p {
+					font-size: 0.9em;
+					line-height: 1.2em;
+				}
+			}
+			article {
+				color: #000;
+    			.meetingMedias {
+    				@include flexSetOrig;
+    				// height: 5px;
+    				line-height: 14px;
+    				// padding: 5px 0;
+					.atRacesImg {
+						width: 30%;
+					}
+					.whTvMedias {
+						// width: 10%;
+						background-color: #ffd400;
+						// border-radius: 2px;
+						font-size: 0.7em;
+						height: 12px;
+					}
+					.onGoingText {
+						@include flexSetEnd;
+						font-size: 0.9 em;
+						width: 60%;
+					}
+				}
+				.racesMarketsbuttons {
+					@include flexSetOrig;
+					margin: 10px 0;
+					.racesButton {
+						width: 50%;
+						&:first-child{
+							margin-right: 5px;
+						}
+						&:last-child{
+							margin-left: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

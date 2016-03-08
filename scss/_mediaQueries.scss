@@ -1,0 +1,123 @@
+// ==========  Mobile First Method  ==========
+
+    // Custom, iPhone Retina  
+@media only screen and (min-width : 320px) 
+						and (max-width: 479px) {
+	#logoWh { width: 58%;}
+	#bettingDrop {
+		width: 12%;
+		ul {
+			padding: 0 10px;
+			margin-top: $minDistance - 5;
+			li:nth-child(1), li:nth-child(2) { // aqui a lo mejor puedo hacer una condicional
+				display: none !important;
+			}
+		}
+	}
+	#loginArea { display: none;}
+	#lang-help {
+		width: 29%;
+		ul{
+			li{
+				&#britishFlag {
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+	#secondLevelHeader {
+		padding: 5px;
+		#backArrow {
+			//margin-right: 5px; 
+			width: 15%
+		}
+		#horseDrop { width: 50%;}
+		#betsSecondLevel { 
+			width: 34%;
+			ul {
+				ul {
+					//margin-right: 5px;
+				}
+			}
+		}
+	}
+	#events {
+	-webkit-justify-content: space-between;
+    justify-content: space-between;
+	}
+    
+}
+
+    // Extra Small Devices, Phones, Apple iPhone 4
+@media only screen and (min-width : 480px)
+						and (max-width: 567px) {
+	#logoWh { width: 58%;}
+	#loginArea {@include flexSetOrig;}
+	.icon-display {display: none;}
+}
+
+    // Small Devices, Phones, Apple iPhone 5/6/6 Plus 
+@media only screen and (min-width : 568px)
+						and (max-width: 767px) {
+	
+}
+
+    // Small Devices, Tablets
+@media only screen and (min-width : 768px)
+						and (max-width: 959px) {
+	
+}
+    // Medium Devices, Desktops
+@media only screen and (min-width : 960px) 
+						and (max-width: 1023px) {
+	
+}
+    // Apple iPad,  Apple iPad Mini, BlackBerry PlayBook
+@media only screen and (min-width : 1024px)
+						and (max-width: 1279px) {
+	
+}
+
+    // Large Devices, Wide Screens, Google Neux 10
+@media only screen and (min-width : 1280px) {
+	#bettingDropMenu-small, #loginArea-small, #horseDrop-small {
+		display: none;
+	}
+}
+
+@media only screen and (min-width : 1350px) {
+	
+}
+	// Large Devices, Laptop with HiDPi
+@media only screen and (min-width : 1440px) {
+	
+}
+
+@media only screen and (min-width : 1560px) {
+	#logoWh { width: 11%;}
+	#bettingDrop {width: 8%;}
+	#bettingDrop {
+		width: 8%;
+		ul {
+			padding: 10px 15px;
+			li:nth-child(3) { // aqui a lo mejor puedo hacer una condicional
+				display: none !important;
+			}
+		}
+	}
+	#loginArea { width: 10%;}
+	#lang-help {
+		width: 71%;
+		ul{
+			li{
+				margin-right: 15px;
+				&#britishFlag {
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+	#horseDrop { width: 9%;}
+	#betsSecondLevel { width: 87.5%;}
+	
+}

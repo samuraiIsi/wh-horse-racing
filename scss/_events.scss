@@ -1,0 +1,19 @@
+#events {
+	background-color: #dad9db;
+	display: -webkit-flex;
+	display: flex;
+	padding: 10px;
+	.event {
+		width: $minDistance * 5;
+		height: $minDistance * 6;
+		position: relative;
+		padding: 9px;
+		p {
+			bottom: 0;
+			color: #000;
+			font-size: $minDistance - 2;
+			position: absolute;
+
+		}
+	}
+}

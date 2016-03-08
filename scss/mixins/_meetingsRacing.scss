@@ -1,0 +1,10 @@
+@mixin banners($bgCBanner, $colorBanner) {
+	background-color: $bgCBanner;
+	color: $colorBanner;
+	margin-bottom: $minDistance;
+	padding: 2px 10px;
+	h1 {
+		font-size: 1.6em;
+		font-weight: 700;
+	}
+}

@@ -1,0 +1,106 @@
+#headerContainer {
+	background: url(../img/headerBG.jpg) repeat-x #000c2c;
+}
+#firstLevelHeader {
+	@include flexSetOrig;
+    height: 75px;
+}
+#secondLevelHeader {
+	background-color: #000;
+	@include flexSetSpace; 
+}
+
+#bettingDrop {
+	background-color: #000;
+	border-radius: 5px 5px 0 0;
+	font-size: 1.4em;
+    margin-top: $minDistance + 5;
+	ul {
+		@include flexSetOrig; 
+    	li:nth-child(1) {
+    		line-height: $minDistance + 2;
+    		margin-right: $minDistance * 5.5;
+    	}
+	} 
+}
+
+#loginArea {
+    margin: $minDistance + 5;
+    padding: $minDistance + 5;
+    width: 15%;
+}
+#lang-help {
+	@include flexSetEnd;
+   	margin-top: $minDistance;
+   	padding: 2px 5px;
+	ul {
+		@include flexSetOrig;
+    	font: normal 19px/26px "Helvetica Neue", Arial, sans-serif;
+		li {
+			border-radius: 50%;
+			background-color: #000c2c;
+			&#britishFlag {
+				padding: 7px 8px 0px 8px;
+			}
+			&#help {
+				padding: 7px 10px 5px 8px;
+				font-size: 0.5em;
+			}
+		}
+	}
+}	
+
+#horseDrop {
+	background-color: #003756;
+	font-size: 1.2em;
+	@include flexSetSpace;
+    padding: 15px 0 0 0;
+    span {
+    	position: relative;
+    	&.icon-horse {
+    		top: -3px;
+    	}
+    	&.dropDownIcon {
+    		right: 5px;
+    	}
+    }
+
+}
+#betsSecondLevel {
+	ul {
+		color: #fff;
+		@include flexSetSpaceEnd;
+		@include minBasicSpace;
+    	ul {
+    		background-color: #3399ff;
+    		display: block;
+	    	li {
+	    		border-radius: 3px;
+				font-size: 0.9em;
+			}
+		}
+	}
+}
+
+#bettingDropMenu-small {
+	@include smFeaturesDropDowns;
+	background-color: #fff;
+	a {
+		color: #000;
+	}
+}
+
+#horseDrop-small {
+	@include smFeaturesDropDowns;
+	a {
+		color: #fff;
+	}
+}
+
+#loginArea-small {
+	padding: 5px;
+	.btn-login, .btn-join {
+		margin: 5px 0;
+		width: 100%;
+	}
+}
