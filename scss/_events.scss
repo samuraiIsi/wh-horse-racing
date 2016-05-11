@@ -17,3 +17,26 @@
 		}
 	}
 }
+
+.event-nav__item {
+	min-width: 6em;
+	text-align: center;
+	width: 6em;
+}
+
+.event-nav__icon {
+	background-color: #ffdd40;
+	border-radius: 50%;
+	box-shadow: 0 2px 0 0 #ba9e1a;
+	color: #000;
+	font-size: 24px;
+		height: 56px;
+	padding: 15px; 
+	width: 56px;
+}
+
+.grid {
+	display: flex;
+	position: relative;
+	margin-left: 0;
+}

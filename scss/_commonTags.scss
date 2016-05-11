@@ -1,5 +1,5 @@
 body{
-    background: url(../img/bodyBG.png) repeat-x #000c2c;
+    // background: url(../img/bodyBG.png) repeat-x #000c2c;
     color: #fff;
 	font-family: OpenSansRegular,Helvetica,Arial,sans-serif;
     font-size: 12px;
@@ -23,4 +23,17 @@ a {
 
 ul {
     list-style-type: none;
+}
+
+.fs0 {
+    font-size: 16px;
+}
+.fs1 {
+    font-size: 32px;
+}
+.fs2 {
+    font-size: 24px;
+}
+.fs3 {
+    font-size: 32px;
 }

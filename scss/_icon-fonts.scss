@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'fontswh';
+    src:url('../fontswh/fontswh.eot');
+    src:url('../fontswh/fontswh.eot') format('embedded-opentype'),
+        url('../fontswh/fontswh.ttf') format('truetype'),
+        url('../fontswh/fontswh.woff') format('woff'),
+        url('../fontswh/fontswh.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*  http://code.tutsplus.com/tutorials/quick-tip-ever-thought-about-using-font-face-for-icons--net-11233
+font face icons tutorial
+@font-face {
+	font-family:mobile-sportsbook;src:url('https://mobet.williamhill.es/skins/williamhill/webkit/font_icons/fonts/mobile-sportsbook-28-10-2015.svg?-jviwxm#mobile-sportsbook-28-10-2015');src:url('https://mobet.williamhill.es/skins/williamhill/webkit/font_icons/fonts/mobile-sportsbook-28-10-2015.svg?-jviwxm#mobile-sportsbook-28-10-2015') format('svg');src:url('https://mobet.williamhill.es/skins/williamhill/webkit/font_icons/fonts/mobile-sportsbook-28-10-2015.eot?#iefix-jviwxm') format('embedded-opentype');src:url('https://mobet.williamhill.es/skins/williamhill/webkit/font_icons/fonts/mobile-sportsbook-28-10-2015.woff?-jviwxm') format('woff');src:url(/skins/williamhill/webkit/font_icons/fonts/mobile-sportsbook-28-10-2015.ttf?-jviwxm) format('truetype');font-weight:400;font-style:normal}*/
+
+[class*=" icon"], [class^="icon"] {
+	font-family: 'fontswh' !important; 
+	speak: none;
+	font-style: normal; 
+	font-weight: 400; 
+	font-variant: normal; 
+	text-transform: none; 
+	line-height: 1; 
+	-webkit-font-smoothing: antialiased; 
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon.my-bets:before{content:"\e67e"}
+.icon.arrow-left:before{content:"\e667"}
+.icon.arrow-right2:before,.icon.arrow-right:before{content:"\e668"}
+.icon.double-arrow-left:before{content:"\e68b"}
+.icon.double-arrow-right:before{content:"\e68c"}
+.icon.form:before{content:"\e669"}
+.icon.arrow:before{content:"\e664"}
+.icon.cash-in:before{content:"\e661"}
+.icon.information:before{content:"\e662"}
+.icon.HRDM:before{content:"\e663"}
+.icon-tv-icon:before,.icon.live-races:before{content:"\e651"}
+.icon.pelota:before{content:"\e60a"}
