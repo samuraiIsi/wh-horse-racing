@@ -1,10 +1,21 @@
+// @font-face {
+//     font-family: 'whIconFont';
+//     src:url('http://sports.staticcache.org/whassets/_cdn/fonts/whIconFont/whIconFont.eot');
+//     src:url('http://sports.staticcache.org/whassets/_cdn/fonts/whIconFont/whIconFont.eot') format('embedded-opentype'),
+//         url('http://sports.staticcache.org/whassets/_cdn/fonts/whIconFont/whIconFont.ttf') format('truetype'),
+//         url('http://sports.staticcache.org/whassets/_cdn/fonts/whIconFont/whIconFont.woff') format('woff'),
+//         url('http://sports.staticcache.org/whassets/_cdn/fonts/whIconFont/whIconFont.svg') format('svg');
+//     font-weight: 400;
+//     font-style: normal;
+// }
+
 @font-face {
-    font-family: 'fontswh';
-    src:url('../fontswh/fontswh.eot');
-    src:url('../fontswh/fontswh.eot') format('embedded-opentype'),
-        url('../fontswh/fontswh.ttf') format('truetype'),
-        url('../fontswh/fontswh.woff') format('woff'),
-        url('../fontswh/fontswh.svg') format('svg');
+    font-family: 'whIconFont';
+    src:url('../whIconFont/whIconFont.eot');
+    src:url('../whIconFont/whIconFont.eot') format('embedded-opentype'),
+        url('../whIconFont/whIconFont.ttf') format('truetype'),
+        url('../whIconFont/whIconFont.woff') format('woff'),
+        url('../whIconFont/whIconFont.svg') format('svg');
     font-weight: 400;
     font-style: normal;
 }
@@ -12,12 +23,13 @@
 /*  http://code.tutsplus.com/tutorials/quick-tip-ever-thought-about-using-font-face-for-icons--net-11233
 font face icons tutorial
 @font-face {
-	font-family:mobile-sportsbook;src:url('https://mobet.williamhill.es/skins/williamhill/webkit/font_icons/fonts/mobile-sportsbook-28-10-2015.svg?-jviwxm#mobile-sportsbook-28-10-2015');src:url('https://mobet.williamhill.es/skins/williamhill/webkit/font_icons/fonts/mobile-sportsbook-28-10-2015.svg?-jviwxm#mobile-sportsbook-28-10-2015') format('svg');src:url('https://mobet.williamhill.es/skins/williamhill/webkit/font_icons/fonts/mobile-sportsbook-28-10-2015.eot?#iefix-jviwxm') format('embedded-opentype');src:url('https://mobet.williamhill.es/skins/williamhill/webkit/font_icons/fonts/mobile-sportsbook-28-10-2015.woff?-jviwxm') format('woff');src:url(/skins/williamhill/webkit/font_icons/fonts/mobile-sportsbook-28-10-2015.ttf?-jviwxm) format('truetype');font-weight:400;font-style:normal}*/
+	font-family:mobile-sportsbook;src:url('https://mobet.williamhill.es/skins/williamhill/webkit/font_icons/fonts/mobile-sportsbook-28-10-2015.svg?-jviwxm#mobile-sportsbook-28-10-2015');src:url('https://mobet.williamhill.es/skins/williamhill/webkit/font_icons/fonts/mobile-sportsbook-28-10-2015.svg?-jviwxm#mobile-sportsbook-28-10-2015') format('svg');src:url('https://mobet.williamhill.es/skins/williamhill/webkit/font_icons/fonts/mobile-sportsbook-28-10-2015.eot?#iefix-jviwxm') format('embedded-opentype');src:url('https://mobet.williamhill.es/skins/williamhill/webkit/font_icons/fonts/mobile-sportsbook-28-10-2015.woff?-jviwxm') format('woff');src:url(/skins/williamhill/webkit/font_icons/fonts/mobile-sportsbook-28-10-2015.ttf?-jviwxm) format('truetype');font-weight:400;font-style:normal}
+*/
 
-[class*=" icon"], [class^="icon"] {
-	font-family: 'fontswh' !important; 
+.icon, [class*=" icon"], [class^="icon-"] {
+	font-family: 'whIconFont' !important; 
 	speak: none;
-	font-style: normal; 
+	font-style: normal;
 	font-weight: 400; 
 	font-variant: normal; 
 	text-transform: none; 
@@ -25,8 +37,27 @@ font face icons tutorial
 	-webkit-font-smoothing: antialiased; 
 	-moz-osx-font-smoothing: grayscale;
 }
+.icon-competitions:before {content:"\e61c";}
+.icon-highlights:before {content: "\e63b";}
+.icon-antepost:before {content: "\e690";}
+.icon-most-popular-bets2:before {content: "\e6a3";}
+.icon-search:before {content: "\e664";}
+.icon-specials:before {content: "\e66d";}
+.icon-select:before {content: "\e665";}
+.icon-expanded:before {content: "\e628";}
+.icon-back:before {content: "\e6a4";}
+.icon-horse-racing:before {content: "\e63e";}
+.icon-open-bets:before {content: "\e6c3";}
+.icon-bet-slip:before {content: "\e612";}
 
-.icon.my-bets:before{content:"\e67e"}
+// .icon-select {
+// 	//color: #fff;
+// 	font-size: 0.75em;
+// 	left: 11em;
+// 	position: relative;
+// }
+
+.icon-my-bets:before{content:"\e67e"}
 .icon.arrow-left:before{content:"\e667"}
 .icon.arrow-right2:before,.icon.arrow-right:before{content:"\e668"}
 .icon.double-arrow-left:before{content:"\e68b"}

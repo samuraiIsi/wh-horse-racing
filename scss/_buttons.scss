@@ -43,3 +43,18 @@
         width: 50px;
     }
 }
+.square-btn {
+    background-color: #184b74;
+    font-size: 20px;
+    @include flexSetSpace;
+    padding: 0px 5px;
+    span {
+        position: relative;
+        font-size: 13px;
+        width: auto;
+        height: auto;
+        vertical-align: baseline;
+        line-height: 1.5;
+        padding: 0 5px;
+    }
+}

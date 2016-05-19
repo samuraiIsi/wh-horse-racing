@@ -2,14 +2,13 @@
     background-repeat: repeat-x;
     cursor: pointer;
     display: block;
-    font: normal 12px/19px "Helvetica Neue", Arial, sans-serif;
+    font: normal 13px "Helvetica Neue", Arial, sans-serif;
     height: 30px;
     margin-right: 10px;
-    // padding: 5px 15px;
-    padding: 5px;
+    padding: 0.7em;
     position: relative;
     text-align: center;
-    width: 80px;
+    // width: 80px;
     &:hover {
         color: black;
     }

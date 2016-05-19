@@ -11,27 +11,22 @@
 <body>
 	<header id="headerContainer">
 		<div id="firstLevelHeader">
-			<div id="logoWh"></div>
 			<div id="bettingDrop">
-				<ul>
-					<li>Betting</li>
-					<li class="dropDownIcon"></li>
-					<li class="icon-display">
-						<span>__</span>
-						<span>__</span>
-						<span>__</span>
-					</li>
-				</ul>
+			<!-- <a href="#" class="logoWh">
+				<i class="icon-select"></i>
+			</a> -->
 			</div>
 			<div id="loginArea">
 				<div class="btn-login">
-					<a href="">Login</a>
+					<a href="#">Login
+						<i class="icon-expanded"></i>
+					</a>
 				</div>
 				<div class="btn-join">
-					<a href="">Join</a>
+					<a href="#">Join</a>
 				</div>
 			</div>
-			<div id="lang-help">
+			<!-- <div id="lang-help">
 				<ul>
 					<a href="">
 						<li id="britishFlag"><img src="img/britishFlag.png" alt="British Flag"></li>
@@ -40,9 +35,9 @@
 						<li id="help">Help</li>
 					</a>
 				</ul>
-			</div>
+			</div> -->
 		</div>
-		<div id="bettingDropMenu-small">
+		<!-- <div id="bettingDropMenu-small">
 			<h2 style="position: absolute; color: black">BETTINGS</h2>
 			<ul>
 				<li style="margin-left: 50%"><a href="#">american football</a></li>
@@ -70,123 +65,125 @@
 				<li><a href="#">Volleyball</a></li>
 				<li><a href="#">Winter Sports</a></li>
 			</ul>
-		</div>
-		<div id="secondLevelHeader">
-			<div id="backArrow">
-				<a href="#">
-					<div class="icon-arrow"></div>
-				</a>
-			</div>
-			<div id="horseDrop">
-				<span class="icon-horse"></span> 
-				<span>Horse Racing</span> 
-				<span class="dropDownIcon"></span>
+		</div> -->
+		<div class="events secondLevelHeader">
+			<div class="rightSecondLevelHeader">
+				<div class="event-nav__item">
+					<a href="#">
+						<div class="event-nav__icon back-arrow">
+							<i class="icon-back"></i>
+						</div>
+					</a>
+				</div>
+				<div class="event-nav__item square-btn">
+					<i class="icon-horse-racing"></i> 
+					<span>Horses</span> 
+					<a href="#">
+						<i class="icon-expanded"></i>
+					</a>
+				</div>
 			</div>
 			<div id="betsSecondLevel">
-				<ul>
-					<ul>
-						<li class="icon-openBets"></li>
-						<li><a href="">Open Bets</a></li>
-					</ul>
-					<ul>
-						<li class="icon-openBets"></li>
-						<li class="betSlip"><a href="">Betslip</a></li>
-					</ul>
-				</ul>
+				<div class="event-nav__item square-btn">
+					<a href="#">
+						<i class="icon-open-bets"></i>
+						<p class="event-nav__title square">Ante Post</p>
+					</a>
+				</div>
+				<div class="event-nav__item square-btn">
+					<a href="#">
+						<i class="icon-bet-slip"></i>
+						<p class="event-nav__title square">Ante Post</p>
+					</a>
+				</div>
 			</div>
 		</div>
-		<div id="horseDrop-small">
-				<h2>HORSE RACING</h2>
-				<ul>
-					<li><a href="#">Cheltenham</a></li>
-					<li><a href="#">Doncaster</a></li>
-					<li><a href="#">Ludlow</a></li>
-					<li><a href="#">Lingfield</a></li>
-					<li><a href="#">Kempton</a></li>
-					<li><a href="#">Portman Park</a></li>
-					<li><a href="#">Steepledowns</a></li>
-					<li><a href="#">Sprint Valley</a></li>
-					<li><a href="#">Festival Downs</a></li>
-					<li><a href="#">Victoria Park</a></li>
-					<li><a href="#">Britannia Way</a></li>
-					<li><a href="#">Champion Hurdle</a></li>
-					<li><a href="#">Champion Chase</a></li>
-					<li><a href="#">Rynair Chase</a></li>
-					<li><a href="#">The Winter Derby</a></li>
-					<li><a href="#">Coral Cup</a></li>
-					<li><a href="#">Grand National</a></li>
-					<li><a href="#">The Derby</a></li>
-					<li><a href="#">Ascot Gold Cup</a></li>
-					<li><a href="#">The Oaks</a></li>
-					<li><a href="#">Auckland Cup</a></li>
-					<li><a href="#">Black Opal Stakes</a></li>
-					<li><a href="#">Sydney Cup</a></li>
-					<li><a href="#">Winter Sport</a></li>
-				</ul>
-				
-			</div>
-		<div id="loginArea-small">
+		<!-- <div id="horseDrop-small">
+			<h2>HORSE RACING</h2>
+			<ul>
+				<li><a href="#">Cheltenham</a></li>
+				<li><a href="#">Doncaster</a></li>
+				<li><a href="#">Ludlow</a></li>
+				<li><a href="#">Lingfield</a></li>
+				<li><a href="#">Kempton</a></li>
+				<li><a href="#">Portman Park</a></li>
+				<li><a href="#">Steepledowns</a></li>
+				<li><a href="#">Sprint Valley</a></li>
+				<li><a href="#">Festival Downs</a></li>
+				<li><a href="#">Victoria Park</a></li>
+				<li><a href="#">Britannia Way</a></li>
+				<li><a href="#">Champion Hurdle</a></li>
+				<li><a href="#">Champion Chase</a></li>
+				<li><a href="#">Rynair Chase</a></li>
+				<li><a href="#">The Winter Derby</a></li>
+				<li><a href="#">Coral Cup</a></li>
+				<li><a href="#">Grand National</a></li>
+				<li><a href="#">The Derby</a></li>
+				<li><a href="#">Ascot Gold Cup</a></li>
+				<li><a href="#">The Oaks</a></li>
+				<li><a href="#">Auckland Cup</a></li>
+				<li><a href="#">Black Opal Stakes</a></li>
+				<li><a href="#">Sydney Cup</a></li>
+				<li><a href="#">Winter Sport</a></li>
+			</ul>
+			
+		</div> -->
+		<!-- <div id="loginArea-small">
 			<div class="btn-login"><a href="#">Login</a></div>
 			<div class="btn-join"><a href="#">Join</a></div>
-		</div>
-		<div id="events">
-			<ul class="grid" style="padding-left: 0">
+		</div> -->
+		<div class="events">
+			<ul class="grid">
 				<li class="event-nav__item">
 					<a href="#" class="">
-						<div class="">
-							<i class="event-nav__icon icon-calendar">
-
-							</i>
+						<div class="grid grid--vertical">
+							<i class="event-nav__icon active icon-competitions"></i>
+							<span class="event-nav__title">Meetings</span>
 						</div>
 					</a>
 				</li>
 				<li class="event-nav__item">
 					<a href="#" class="">
-						<div class="">
-							<i class="event-nav__icon icon arrow-left">
-
-							</i>
+						<div class="grid grid--vertical">
+							<i class="event-nav__icon icon-highlights"></i>
+							<span class="event-nav__title">Next Off</span>
 						</div>
 					</a>
 				</li>
 				<li class="event-nav__item">
 					<a href="#" class="">
-						<div class="">
-							<i class="event-nav__icon icon calendar">
-
-							</i>
+						<div class="grid grid--vertical">
+							<i class="event-nav__icon icon-antepost"></i>
+							<span class="event-nav__title">Ante Post</span>
 						</div>
 					</a>
 				</li>
 				<li class="event-nav__item">
 					<a href="#" class="">
-						<div class="">
-							<i class="event-nav__icon icon monitor">
-
-							</i>
+						<div class="grid grid--vertical">
+							<i class="event-nav__icon golden icon-most-popular-bets2"></i>
+							<span class="event-nav__title">Top Bets</span>
 						</div>
 					</a>
-				</li>	
+				</li>
+				<li class="event-nav__item">
+					<a href="#" class="">
+						<div class="grid grid--vertical">
+							<i class="event-nav__icon icon-search"></i>
+							<span class="event-nav__title">Search</span>
+						</div>
+					</a>
+				</li>
+				<li class="event-nav__item">
+					<a href="#" class="grid">
+						<div class="grid grid--vertical">
+							<i class="event-nav__icon icon-specials"></i>
+							<span class="event-nav__title">Specials</span>
+						</div>
+					</a>
+				</li>				
 			</ul>
 		</div>
-		<!-- <div id="events">
-			<div class="event fs1">
-				<i class="circle-events font-icon arrow-left"></i>
-				<p>Next Off</p>
-			</div>
-			<div class="event fs1">
-				<i class="circle-events icon-monitor"></i>
-				<p>Anti Post</p>
-			</div>
-			<div class="event fs1">
-				<i class="circle-events icon-star2"></i>
-				<p>Specials</p>
-			</div>
-			<div class="event fs1">
-				<i class="circle-events icon-news"></i>
-				<p>Match Bets</p>
-			</div>
-		</div> -->
 	</header>
 	<section id="horseEventsSection">
 		<article id="meetings">
@@ -216,13 +213,13 @@
 				<div class="race-dropDown">
 					<header>
 						<h4>UK &amp; Irleand
-							<a href=""><span class="dropDownIcon"></span></a>
+							<a href="#"><span class="dropDownIcon"></span></a>
 						</h4>
 					</header>
 					<section>
 						<header>
 							<h4>Kempton
-							<a href=""><span class="dropDownIcon"></span></a>
+							<a href="#"><span class="dropDownIcon"></span></a>
 						</h4>
 						</header>
 						<aside>

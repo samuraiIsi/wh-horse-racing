@@ -1,8 +1,6 @@
 #logoWh {
     background: url(../img/whLogo2.jpg) no-repeat center center;
-    // display: block;
     margin-top: $minDistance * 2.5;
-    // height: $minDistance * 5;
 }
 
 .yellowSq {
@@ -12,4 +10,14 @@
 	padding: 3px;
 	display: inline-block;
 	margin-bottom: -1px;
+}
+
+a {
+	.icon-expanded {
+	    left: 2px;
+		position: relative;
+		color: #fff;
+		font-size: 13px;
+		padding-right: 5px;
+	}
 }

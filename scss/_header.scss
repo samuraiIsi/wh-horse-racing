@@ -1,33 +1,33 @@
-#headerContainer {
-	background: url(../img/headerBG.jpg) repeat-x #000c2c;
+#bettingDropMenu-small {
+	@include smFeaturesDropDowns;
+	background-color: #fff;
+	a {
+		color: #000;
+	}
 }
+// #betsSecondLevel {
+// 	ul {
+// 		color: #fff;
+// 		@include flexSetSpaceEnd;
+// 		@include minBasicSpace;
+//     	ul {
+//     		background-color: #3399ff;
+//     		display: block;
+// 	    	li {
+// 	    		border-radius: 3px;
+// 				font-size: 0.9em;
+// 			}
+// 		}
+// 	}
+// }
 #firstLevelHeader {
 	@include flexSetOrig;
-    height: 75px;
+    min-height: 56px;
+    padding: 0px 8px;
 }
-#secondLevelHeader {
-	background-color: #000;
-	@include flexSetSpace; 
-}
-
-#bettingDrop {
-	background-color: #000;
-	border-radius: 5px 5px 0 0;
-	font-size: 1.4em;
-    margin-top: $minDistance + 5;
-	ul {
-		@include flexSetOrig; 
-    	li:nth-child(1) {
-    		line-height: $minDistance + 2;
-    		margin-right: $minDistance * 5.5;
-    	}
-	} 
-}
-
-#loginArea {
-    margin: $minDistance + 5;
-    padding: $minDistance + 5;
-    width: 15%;
+#headerContainer {
+	// background: url(../img/headerBG.jpg) repeat-x #000c2c;
+	background-color: #184b74; 
 }
 #lang-help {
 	@include flexSetEnd;
@@ -49,58 +49,31 @@
 		}
 	}
 }	
-
-#horseDrop {
-	background-color: #003756;
-	font-size: 1.2em;
-	@include flexSetSpace;
-    padding: 15px 0 0 0;
-    span {
-    	position: relative;
-    	&.icon-horse {
-    		top: -3px;
-    	}
-    	&.dropDownIcon {
-    		right: 5px;
-    	}
-    }
-
+#loginArea {
+    padding: $minDistance + 5;
+	position: relative;
+	top: -3px;
+    @include flexSetOrig;
+    float: right;
 }
-#betsSecondLevel {
-	ul {
-		color: #fff;
-		@include flexSetSpaceEnd;
-		@include minBasicSpace;
-    	ul {
-    		background-color: #3399ff;
-    		display: block;
-	    	li {
-	    		border-radius: 3px;
-				font-size: 0.9em;
-			}
-		}
-	}
-}
-
-#bettingDropMenu-small {
-	@include smFeaturesDropDowns;
-	background-color: #fff;
-	a {
-		color: #000;
-	}
-}
-
-#horseDrop-small {
-	@include smFeaturesDropDowns;
-	a {
-		color: #fff;
-	}
-}
-
 #loginArea-small {
 	padding: 5px;
 	.btn-login, .btn-join {
 		margin: 5px 0;
 		width: 100%;
+	}
+}
+@media only screen and (max-width: 480px) and (min-width: 0px) {
+	.logoWh {
+	    display: inline-block;
+	    font-size: 16px;
+	    background-image: url(../whIconFont/wh-logo.svg);
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    background-position: 0 center;
+	    margin: 0;
+	    height: 3em;
+	    padding-top: 1em;
+	    width: 122px;
 	}
 }
