@@ -1,7 +1,6 @@
 .btn-login {
-    @include featureButtons(3px, none, white, none);
+    @include featureButtons(3px, none, white, none, $secondColorLogin, none, 0.5em);
     background: {
-        color: $secondColorLogin;
         image: -khtml-gradient(linear, left top, left bottom, from($firstColorLogin), to($secondColorLogin));
         image: -moz-linear-gradient($firstColorLogin, $secondColorLogin);
         image: -ms-linear-gradient($firstColorLogin, $secondColorLogin);
@@ -16,10 +15,8 @@
 }
 
 .btn-join {
-    @include featureButtons(3px, none, white, none);
-    //color: #cbe566;
+    @include featureButtons(3px, none, white, none, $secondColorLogin, none, 0.8em);
     background: {
-        color: $secondColorJoin;
         image: -khtml-gradient(linear, left top, left bottom, from($firstColorJoin), to($secondColorJoin));
         image: -moz-linear-gradient($firstColorJoin, $secondColorJoin);
         image: -ms-linear-gradient($firstColorJoin, $secondColorJoin);
@@ -34,20 +31,21 @@
 }
 
 .btn-racesMeet {
-    @include featureButtons(none, none, black, none);
-    background-color: #b4bfc5;
+    @include featureButtons(3px, none, black, none, #dadfe5, none, 12px 0);
     width: 100%;
-    margin: 10px 0;
+    margin: 8px 0;
     position: relative;
     &.btn-bet {
         width: 50px;
     }
 }
-.square-btn {
+.btn-square {
     background-color: #184b74;
     font-size: 20px;
     @include flexSetSpace;
-    padding: 0px 5px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 4px;
     span {
         position: relative;
         font-size: 13px;
@@ -57,4 +55,29 @@
         line-height: 1.5;
         padding: 0 5px;
     }
+}
+.btn-backArrow {
+    @include circleFeatures(#fff, rgba(255,255,255, 0.1), none);
+    border-radius: 4px;
+    font-size: 20px;
+    width: 40px;
+    padding: 9px 0;
+}
+.btn-circle {
+    @include circleFeatures(#005266, #eef1f3, 0 2px 0 0 #C5C9CC);
+    border-radius: 50%;
+    font-size: 24px;
+    margin-bottom: 0.375em;
+    padding: 15px; 
+    width: 56px;
+    &.active {
+        @include circleFeatures(#fff, #248cb3, 0 2px 0 0 #054d68);
+    }
+    &.golden {
+        @include circleFeatures(#fff, #908826, 0 2px 0 0 #777018);
+    }
+    &.icon-specials {
+        color: #d65a77;
+    }
+    
 }

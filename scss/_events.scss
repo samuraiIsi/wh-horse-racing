@@ -9,16 +9,31 @@
 	&.secondLevelHeader {
 		background-color: #12324b;
 		font-size: 20px;
-		padding: $minDistance - 5;
+		padding: $minDistance;
+		>div > div {
+			margin: 0 4px 0 0;
+		}
+		>div > div:last-child {
+			margin: 0;
+		}
 	}
 	& .rightSecondLevelHeader {
 		@include flexSetOrig;
 		width: 50%;
+		>div:nth-child(2) {
+			padding-top: $minDistance;
+		}
 	}
 	& #betsSecondLevel {
 		@include flexSetEnd;
 		width: 50%;
 		color: #fff;
+		i {
+			font-size: 17px;
+		}
+		>div {
+			min-width: 3em;
+		}
 	}
 }
 //, #backArrow 
@@ -28,43 +43,8 @@
 	// width: 4.15rem;
 	margin-left: $minDistance - 2;
 	margin-right: $minDistance - 2;
+	@include flexSetSpace;
 }
-
-.event-nav__icon {
-	align-self: center;
-	background-color: #eef1f3;
-	border-radius: 50%;
-	box-shadow: 0 2px 0 0 #C5C9CC;
-	color: #005266;
-	font-size: 24px;
-	//height: 56px;
-	margin-bottom: 0.375em;
-	padding: 15px; 
-	width: 56px;
-	&.active {
-		background-color: #248cb3;
-		color: #fff;
-		box-shadow: 0 2px 0 0 #054d68;
-	}
-	&.golden {
-		background-color: #908826;
-		color: #fff;
-		box-shadow: 0 2px 0 0 #777018;
-	}
-	&.icon-specials {
-		color: #d65a77;
-	}
-	&.back-arrow {
-		background-color: rgba(255,255,255, 0.1);
-		color: #fff;
-		box-shadow: none;
-		border-radius: 2%;
-		margin: 0 4px;
-		width: 45px;
-		padding: 10px;
-	}
-}
-
 .event-nav__title {
 	color: #000;
 	font-weight: bold;
@@ -72,6 +52,7 @@
 		color: #fff;
 		font-weight: bold;
 		font-size: 10px;
+		margin: 5px 0 0 0;
 	}
 }
 

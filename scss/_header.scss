@@ -63,6 +63,9 @@
 		width: 100%;
 	}
 }
+.logoWh {
+	background-image: url(../whIconFont/wh-logo.svg);
+}
 @media only screen and (max-width: 480px) and (min-width: 0px) {
 	.logoWh {
 	    display: inline-block;

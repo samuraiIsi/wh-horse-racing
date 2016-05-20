@@ -1,10 +1,12 @@
 #horseEventsSection {
 	background-color: #dad9db;
-	padding: 0 10px;
 }
 
 #meetingsBanner {
-	@include banners(#3399ff, #fff);
+	@include banners(#018cb5, #fff);
+	p {
+		font-size: 17px;
+	}
 }
 
 #horseRacingBanner {
@@ -15,19 +17,20 @@
 		border-bottom: 1px solid #ddd;
 		margin: 0;
 		li {
-			background-color: #b4bfc5;
+			background-color: #e1e1ea;
 			display: inline;
-			padding: 10px;
+			padding: 15px;
 			text-align: center;
 			width: 50%;
 			a {
-				color: blue;
+				color: 000;
+				font-weight: bold;
 				text-decoration: none;
 			}
 			&.active {
 				background-color: #fff;
 				a {
-					color: blue;
+					color: #00427D;
 				}
 			}
 		}
@@ -43,7 +46,7 @@
 		header {
 			//display: block;
 			padding: 15px;
-			background-color: #000c2c;
+			background-color: #184b74;
 			margin-bottom: 1px;
 			// width: 100%;			
 			h4 {
@@ -67,24 +70,24 @@
 				}
 				article {
 					// border-bottom: $borderBox; // reuso de border a traves de #-{}
+					@include flexSetOrig;
 					border: $borderBox;
 					border-top: 0;
 					padding: 10px;
 					.horseProfile {
-						@include flexSetOrig;
+						@include flexSetColumn;
 						.number {
-							width: 20%,
+							//width: 20%,
 						}
+					}
+					.tshirt {
+						position: relative;
 					}
 					.betProfile {
 						@include flexSetOrig;
 						padding: 10px 0;
 						//width: 100%;
-						.tshirt {
-							// height: 29px;
-							position: relative;
-							width: 15%;
-						}
+						
 						ul {
 							width: 65%;
 							line-height: $minDistance + 5;
@@ -101,7 +104,7 @@
 			header {
 				// width: 100%;
 				// padding: 15px;
-				background-color: #3399ff; // crear variable que se llame $sceondaryColor
+				background-color: #237eb1; // crear variable que se llame $sceondaryColor
 				// margin-bottom: 1px;
 				// width: 100%;				
 				h4 {
@@ -151,7 +154,7 @@
 				.racesMarketsbuttons {
 					@include flexSetOrig;
 					margin: 10px 0;
-					.racesButton {
+					.racesButton { // podria convertirlo --3columns
 						width: 50%;
 						&:first-child{
 							margin-right: 5px;
