@@ -35,9 +35,15 @@
     width: 100%;
     margin: 8px 0;
     position: relative;
-    &.btn-bet {
-        width: 50px;
-    }
+    -webkit-box-flex: 0 0 5.3em;
+    -moz-box-flex: 0 0 5.3em;
+    -webkit-flex: 0 0 5.3em;
+    -ms-flex: 0 0 5.3em;
+    flex: 0 0 5.3em;
+    /* -webkit-align-self: flex-end; */
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    margin-left: .75em;
 }
 .btn-square {
     background-color: #184b74;
@@ -80,4 +86,9 @@
         color: #d65a77;
     }
     
+}
+.btn-bet {
+    margin: 0;
+    max-height: 26px;
+    width: 50px;
 }

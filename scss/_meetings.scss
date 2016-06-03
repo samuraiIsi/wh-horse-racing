@@ -82,14 +82,30 @@
 					}
 					.tshirt {
 						position: relative;
+						@include flexSetColumn;
+						// webkit-box-pack: justify;
+					 //    -moz-box-pack: justify;
+					    -webkit-justify-content: space-between;
+					    //-ms-flex-pack: justify;
+					    justify-content: space-between;
+					    -webkit-box-align: center;
+					    -moz-box-align: center;
+					    -webkit-align-items: center;
+					    -ms-flex-align: center;
+					    align-items: center;
+					    // -webkit-box-flex: 0 0 3.33333em;
+					    // -moz-box-flex: 0 0 3.33333em;
+					    // -webkit-flex: 0 0 3.33333em;
+					    // -ms-flex: 0 0 3.33333em;
+					    // flex: 0 0 -6.66667em;
+   					 	/* cursor: pointer; */
 					}
 					.betProfile {
 						@include flexSetOrig;
-						padding: 10px 0;
-						//width: 100%;
+						//padding: 10px 0;
+						width: 60%;
 						
 						ul {
-							width: 65%;
 							line-height: $minDistance + 5;
 							list-style-type: none;
 							margin: 0;
