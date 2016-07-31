@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>WH-Horse-Racing</title>
@@ -9,343 +9,345 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<header id="headerContainer">
-		<div id="firstLevelHeader">
-			<div id="bettingDrop">
-			<a href="#" class="logoWh">
-				<i class="icon-select"></i>
-			</a>
-			</div>
-			<div id="loginArea">
-				<div class="btn-login">
-					<a href="#">Login
-						<i class="icon-expanded"></i>
+	<header>
+		<div class="row bg-blue-dark-27">
+			<div class="container flex-container" >
+				<div class="btn-respons-menu hidden-md">
+    				<a href="javascript:void(0);" onclick="myFunction()">☰</a>
+ 				</div>
+				<h1 class="logo-header">
+					<a href="#" class="pull-left">
+						<span class="logo-bg"></span>
 					</a>
+					<div class="btn btn--login pull-right hidden-sm">
+						<a href="#" class="pull-left">
+							<span>Betting</span>
+							<i class="fs0 icon-select"></i>
+						</a>
+					</div>
+				</h1>
+				<div class="row flex-container push-right row--sm">
+					<div class="btn btn--login hidden-sm">
+						<a href="#">Login
+							<i class="fs0 icon-expanded"></i>
+						</a>
+					</div>
+					<div class="btn--circle btn--circle--sm btn--login--sm hidden-md">
+						<a href="#">
+							<i class="fs0 icon-login-head"></i>
+						</a>
+					</div>
+					<div class="btn btn--join">
+						<a href="#">Join</a>
+					</div>
 				</div>
-				<div class="btn-join">
-					<a href="#">Join</a>
-				</div>
-			</div>
-			<!-- <div id="lang-help">
-				<ul>
-					<a href="">
-						<li id="britishFlag"><img src="img/britishFlag.png" alt="British Flag"></li>
-					</a>
-					<a href="">
-						<li id="help">Help</li>
-					</a>
+				<ul class="flex-container">
+					<li class="flag-position">
+						<a href="#">
+							<i class="flags-sprite flag--spain"></i>
+						</a>
+					</li>
+					<li class="btn--circle btn--circle--sm btn--info">
+						<a href="#">
+							<i class="icon information"></i>
+						</a>
+					</li>
 				</ul>
-			</div> -->
+				</div>
+			</div>
 		</div>
-		<!-- <div id="bettingDropMenu-small">
-			<h2 style="position: absolute; color: black">BETTINGS</h2>
-			<ul>
-				<li style="margin-left: 50%"><a href="#">american football</a></li>
-				<li><a href="#">australian rules</a></li>
-				<li><a href="#">baseball</a></li>
-				<li><a href="#">basketball</a></li>
-				<li><a href="#">boxing</a></li>
-				<li><a href="#">Cycling</a></li>
-				<li><a href="#">DARTS</a></li>
-				<li><a href="#">E-Sports</a></li>
-				<li><a href="#">GAA Football</a></li>
-				<li><a href="#">GAA Hurling</a></li>
-				<li><a href="#">Golf</a></li>
-				<li><a href="#">Handball</a></li>
-				<li><a href="#">Ice Hockey</a></li>
-				<li><a href="#">Lotteries</a></li>
-				<li><a href="#">Motor Racing</a></li>
-				<li><a href="#">Motorbikes</a></li>
-				<li><a href="#">Politics</a></li>
-				<li><a href="#">Rugby League</a></li>
-				<li><a href="#">Rugby Union</a></li>
-				<li><a href="#">Snooker</a></li>
-				<li><a href="#">T/V Special</a></li>
-				<li><a href="#">UFC / MMA</a></li>
-				<li><a href="#">Volleyball</a></li>
-				<li><a href="#">Winter Sports</a></li>
-			</ul>
-		</div> -->
-		<div class="events secondLevelHeader">
-			<div class="rightSecondLevelHeader">
-				<div class="event-nav__item">
-					<a href="#">
-						<div class="btn-backArrow">
+		<div class="row bg-blue-dark-18">
+			<div class="container flex-container-sp-btw" >
+				<div class="flex-container">
+					<div class="btn btn-back-arrow first--inlist">
+						<a href="#">
 							<i class="icon-back"></i>
-						</div>
-					</a>
+						</a>
+					</div>
+					<div class="btn btn--primary btn-horizontal">
+						<i class="icon-horse-racing"></i> 
+						<span class="fs0">Horses</span>
+					</div>
 				</div>
-				<div class="btn-square">
-					<i class="icon-horse-racing"></i> 
-					<span>Horses</span> 
-					<a href="#">
-						<i class="icon-expanded"></i>
-					</a>
-				</div>
-			</div>
-			<div id="betsSecondLevel">
-				<div class="btn-square">
-					<a href="#">
-						<i class="icon-open-bets"></i>
-						<p class="event-nav__title square">Open Bets</p>
-					</a>
-				</div>
-				<div class="btn-square">
-					<a href="#">						
-						<i class="icon-bet-slip"></i>
-						<p class="event-nav__title square">BetSlip</p>
-					</a>
+				<div class="flex-container">
+					<div class="btn btn--primary">
+						<a href="#">
+							<i class="icon-open-bets"></i>
+							<p class="btn__title sq">Open Bets</p>
+						</a>
+					</div>
+					<div class="btn btn--primary">
+						<a href="#">						
+							<i class="icon-bet-slip"></i>
+							<p class="btn__title sq">BetSlip</p>
+						</a>
+					</div>
 				</div>
 			</div>
-		</div>
-		<!-- <div id="horseDrop-small">
-			<h2>HORSE RACING</h2>
-			<ul>
-				<li><a href="#">Cheltenham</a></li>
-				<li><a href="#">Doncaster</a></li>
-				<li><a href="#">Ludlow</a></li>
-				<li><a href="#">Lingfield</a></li>
-				<li><a href="#">Kempton</a></li>
-				<li><a href="#">Portman Park</a></li>
-				<li><a href="#">Steepledowns</a></li>
-				<li><a href="#">Sprint Valley</a></li>
-				<li><a href="#">Festival Downs</a></li>
-				<li><a href="#">Victoria Park</a></li>
-				<li><a href="#">Britannia Way</a></li>
-				<li><a href="#">Champion Hurdle</a></li>
-				<li><a href="#">Champion Chase</a></li>
-				<li><a href="#">Rynair Chase</a></li>
-				<li><a href="#">The Winter Derby</a></li>
-				<li><a href="#">Coral Cup</a></li>
-				<li><a href="#">Grand National</a></li>
-				<li><a href="#">The Derby</a></li>
-				<li><a href="#">Ascot Gold Cup</a></li>
-				<li><a href="#">The Oaks</a></li>
-				<li><a href="#">Auckland Cup</a></li>
-				<li><a href="#">Black Opal Stakes</a></li>
-				<li><a href="#">Sydney Cup</a></li>
-				<li><a href="#">Winter Sport</a></li>
-			</ul>
-			
-		</div> -->
-		<!-- <div id="loginArea-small">
-			<div class="btn-login"><a href="#">Login</a></div>
-			<div class="btn-join"><a href="#">Join</a></div>
-		</div> -->
-		<div class="events">
-			<ul class="grid">
-				<li class="event-nav__item">
-					<a href="#" class="">
-						<div class="grid grid--vertical">
-							<i class="btn-circle active icon-competitions"></i>
-							<span class="event-nav__title">Meetings</span>
-						</div>
-					</a>
-				</li>
-				<li class="event-nav__item">
-					<a href="#" class="">
-						<div class="grid grid--vertical">
-							<i class="btn-circle icon-highlights"></i>
-							<span class="event-nav__title">Next Off</span>
-						</div>
-					</a>
-				</li>
-				<li class="event-nav__item">
-					<a href="#" class="">
-						<div class="grid grid--vertical">
-							<i class="btn-circle icon-antepost"></i>
-							<span class="event-nav__title">Ante Post</span>
-						</div>
-					</a>
-				</li>
-				<li class="event-nav__item">
-					<a href="#" class="">
-						<div class="grid grid--vertical">
-							<i class="btn-circle golden icon-most-popular-bets2"></i>
-							<span class="event-nav__title">Top Bets</span>
-						</div>
-					</a>
-				</li>
-				<li class="event-nav__item">
-					<a href="#" class="">
-						<div class="grid grid--vertical">
-							<i class="btn-circle icon-search"></i>
-							<span class="event-nav__title">Search</span>
-						</div>
-					</a>
-				</li>
-				<li class="event-nav__item">
-					<a href="#" class="grid">
-						<div class="grid grid--vertical">
-							<i class="btn-circle icon-specials"></i>
-							<span class="event-nav__title">Specials</span>
-						</div>
-					</a>
-				</li>				
-			</ul>
 		</div>
 	</header>
-	<section id="horseEventsSection">
-		<article id="meetings">
-			<div id="meetingsBanner">
-				<p>Meetings</p>
-			</div>
-			<ul class="nav nav-tab">
-				<li class="active"><a href="">Today</a></li>
-				<li><a href="">Tomorrow</a></li>
-			</ul>
-			<div class="races">
-				<div class="race-dropDown">
-					<header>
-						<h4>Next Off Races
-							<a href="#"><span class="dropDownIcon"></span></a>
-						</h4>
-					</header>
+	<section id="bodyContainer" class="container">
+		<ul class="flex-container">
+			<li class="btn--circle first--inlist">
+				<a href="#" class="">
+					<div class="flex-container--vertical">
+						<i class="btn--circleIcon active icon-competitions"></i>
+						<p class="btn__title">Meetings</p>
+					</div>
+				</a>
+			</li>
+			<li class="btn--circle">
+				<a href="#" class="">
+					<div class="flex-container--vertical">
+						<i class="btn--circleIcon icon-highlights"></i>
+						<p class="btn__title">Next Off</p>
+					</div>
+				</a>
+			</li>
+			<li class="btn--circle">
+				<a href="#" class="">
+					<div class="flex-container--vertical">
+						<i class="btn--circleIcon icon-antepost"></i>
+						<p class="btn__title">Ante Post</p>
+					</div>
+				</a>
+			</li>
+			<li class="btn--circle">
+				<a href="#" class="">
+					<div class="flex-container--vertical">
+						<i class="btn--circleIcon golden icon-most-popular-bets2"></i>
+						<p class="btn__title">Top Bets</p>
+					</div>
+				</a>
+			</li>
+			<li class="btn--circle">
+				<a href="#" class="">
+					<div class="flex-container--vertical">
+						<i class="btn--circleIcon icon-search"></i>
+						<p class="btn__title">Search</p>
+					</div>
+				</a>
+			</li>
+			<li class="btn--circle">
+				<a href="#" class="flex-container">
+					<div class="flex-container--vertical">
+						<i class="btn--circleIcon icon-specials"></i>
+						<p class="btn__title">Specials</p>
+					</div>
+				</a>
+			</li>				
+		</ul>
+		<section class="flex-container-lg">
+			<article class="wrapper-1">
+				<div class="bar-title bg-blue-dark-36">
+					<h2>Meetings</h2>
 				</div>
-				<div class="race-dropDown">
-					<header>
-						<h4>My WHTV Races
-							<a href="#"><span class="dropDownIcon"></span></a>
-						</h4>
-						
-					</header>
-				</div>
-				<div class="race-dropDown">
-					<header>
-						<h4>UK &amp; Irleand
-							<a href="#"><span class="dropDownIcon"></span></a>
-						</h4>
-					</header>
-					<section>
-						<header>
-							<h4>Kempton
-							<a href="#"><span class="dropDownIcon"></span></a>
-						</h4>
+				<ul class="flex-container nav-tab">
+					<li class="active">
+						<a href="#" class="">Meetings</a>
+					</li>
+					<li>
+						<a href="">Tomorrow</a>
+					</li>
+				</ul>
+				<div class="bg-white-100">
+					<div>
+						<header class="bar-title bg-blue-dark-27 list">
+							<h4>Next Off Races
+								<a href="#">
+									<i class="turn-up-grade pull-right icon-arrow-slim"></i>
+								</a>
+							</h4>
 						</header>
-						<aside>
-							<p>
-								Money back as a free bet if 2nd on 2:45 at Ludlow. Must be 5+ runners up to &pound;25 free bet. Mobile Only.
-								<a href="https://www.williamhill.com/promos/moneyback2nd?termsMobileFriendly" target="_blank">View terms</a>
-							</p>
-						</aside>
-						<article>
-							<div class="meetingMedias">
-								<div class="atRacesImg"><img src="../img/atr.png"></div>
-								<div class="whTvMedias"><i class=""></i><span>WHTV</span></div>
-								<div class="onGoingText"><span>Going: Good to Soft</span></div>
-							</div>
-							<div class="racesMarketsbuttons">
-								<div class="racesButton">
-									<div class="btn-racesMeet"><a href="#">All Races</a></div>
-									<div class="btn-racesMeet"><a href="#">1:20 </a><span class="yellowSq"></span></div>
-									<div class="btn-racesMeet"><a href="#">2:10 <i class="yellowSq"></i></a></div>
-									<div class="btn-racesMeet"><a href="#">3:15 <i class="yellowSq"></i></a></div>
-								</div>
-								<div class="racesButton">
-									<div class="btn-racesMeet"><a href="#">Meeting Markets</a></div>
-									<div class="btn-racesMeet"><a href="#">1:40 <i class="yellowSqyellowSq"></i></a></div>
-									<div class="btn-racesMeet"><a href="#">2:45 <i class="yellowSq"></i></a></div>
-									<div class="btn-racesMeet"><a href="#">3:20 <i class="yellowSq"></i></a></div>
-								</div>
-							</div>	
-						</article>
-					</section>
-				</div>
-			</div>
-		</article>
-		<article id="horseRacing">
-			<div id="horseRacingBanner">
-				<h1>Horse Racing</h1>
-			</div>
-			<ul class="nav nav-tab">
-				<li class="active"><a href="">Next Off</a></li>
-				<li><a href="">Top Bets</a></li>
-				<li><a href="">Highlights</a></li>
-			</ul>
-			<div class="races">
-				<div class="race-dropDown">
-					<section class="horseRacingBox">
-						<header>
-							<h4>11:10 Durbanville<a href=""><span class="dropDownIcon"></span></a></h4>
+					</div>
+					<div>
+						<header class="bar-title bg-blue-dark-27 list">
+							<h4>My WHTV Races
+								<a href="#">								
+									<i class="turn-up-grade pull-right icon-arrow-slim"></i>							
+								</a>
+							</h4>						
 						</header>
-						<article>
-							<div class="horseProfile">
-								<span class="number">4</span>
-								<span class="number">2</span>
-							</div>
-							<div class="tshirt">
-								<img src="img/icon-tshirt-blackTs.gif">
-								<span>4F1-1</span>
-							</div>
-							<div class="betProfile">
-								<ul>
-									<li>Aunty Ann</li>
-									<li>J: Bass, D</li>
-									<li>T: Bailey, K</li>
+					</div>
+					<div>
+						<header class="bar-title bg-blue-dark-27 list">
+							<h4>UK &amp; Irleand
+								<a href="#">
+									<i class="turn-up-grade pull-right icon-arrow-slim"></i>
+								</a>
+							</h4>
+						</header>
+						<section class="box-container">
+							<header class="bar-title bg-blue-dark-42">
+								<h4>Kempton
+								<a href="#"><span class="dropDownIcon"></span></a>
+							</h4>
+							</header>
+							<aside class="warning-message">
+								<p>
+									Money back as a free bet if 2nd on 2:45 at Ludlow. Must be 5+ runners up to &pound;25 free bet. Mobile Only.
+									<a href="https://www.williamhill.com/promos/moneyback2nd?termsMobileFriendly" target="_blank">View terms</a>
+								</p>
+							</aside>
+							<article>
+								<ul class="flex-container alignIt-center">
+									<li class="at-races"></li>
+									
+									<li class="icon-tv-icon sm-bg sm-bg--y"><span>WHTV</span></li>
+									<li class="text -b pull-end">Going: Good to Soft</li>
 								</ul>
-							</div>
-							<div class="btn-racesMeet btn-bet"><a href="#">7/4</a></div>
-						</article>
-						<article>
-							<div class="horseProfile">
-								<span class="number">4</span>
-								<span>Ovar</span>
-							</div>
-							<div class="betProfile">
-								<div class="tshirt"><i class="icon-tshirt-redTs"></i></div>
-								<ul>
-									<li>J: Dormeyer, A</li>
-									<li>T: Nel, W</li>
-								</ul>
-								<div class="btn-racesMeet btn-bet"><a href="#">5/2</a></div>
-							</div>
-						</article>
-						<article>
-							<div class="horseProfile">
-								<span class="number">4</span>
-								<span>Galaxy King</span>
-							</div>
-							<div class="betProfile">
-								<div class="tshirt"><i class="icon-tshirt-purpleTs"></i></div>
-								<ul>
-									<li>J: Faid&#39;Herbe, B</li>
-									<li>T: Sheehan, R</li>
-								</ul>
-								<div class="btn-racesMeet btn-bet"><a href="#">11/2</a></div>
-							</div>
-						</article>
-						<article>
-							<div class="horseProfile">
-								<span class="number">4</span>
-								<span>Red Rex</span>
-							</div>
-							<div class="betProfile">
-								<div class="tshirt"><i class="icon-tshirt-blackTs"></i></div>
-								<ul>
-									<li>J: May, B</li>
-									<li>T: Reenen, Ri Van</li>
-								</ul>
-								<div class="btn-racesMeet btn-bet"><a href="#">11/2</a></div>
-							</div>
-						</article>
-						<article>
-							<div class="horseProfile">
-								<span class="number">4</span>
-								<span>Pink Jewells</span>
-							</div>
-							<div class="betProfile">
-								<div class="tshirt"><i class="icon-tshirt-yellowTs"></i></div>
-								<ul>
-									<li>J: Parker, Deshawn</li>
-									<li>T: Reed, Eric</li>
-								</ul>
-								<div class="btn-racesMeet btn-bet"><a href="#">2/1</a></div>
-							</div>
-						</article>
-					</section>
+								<div class="flex-container">
+									<div class="col-container-right list-btn">
+										<div class="btn btn--default btn--sm"><a href="#">All Races</a></div>
+										<div class="btn btn--default btn--sm"><a href="#">1:20 </a><span class="yellowSq"></span></div>
+										<div class="btn btn--default btn--sm"><a href="#">2:10 <i class="yellowSq"></i></a></div>
+										<div class="btn btn--default btn--sm"><a href="#">3:15 <i class="yellowSq"></i></a></div>
+									</div>
+									<div class="col-container-left list-btn">
+										<div class="btn btn--default btn--sm"><a href="#">Meeting Markets</a></div>
+										<div class="btn btn--default btn--sm"><a href="#">1:40 <i class="yellowSqyellowSq"></i></a></div>
+										<div class="btn btn--default btn--sm"><a href="#">2:45 <i class="yellowSq"></i></a></div>
+										<div class="btn btn--default btn--sm"><a href="#">3:20 <i class="yellowSq"></i></a></div>
+									</div>
+								</div>	
+							</article>
+						</section>
+					</div>
 				</div>
-			</div>
-		</article>
+			</article>
+			<article class="wrapper-2">
+				<div class="bar-title bg-white-100">
+					<h2>Horse Racing</h2>
+				</div>
+				<ul class="flex-container nav-tab">
+					<li class="active"><a href="">Next Off</a></li>
+					<li><a href="">Top Bets</a></li>
+					<li><a href="">Highlights</a></li>
+				</ul>
+				<div class="bg-white-100">
+					<div>
+						<section class="horseRacingBox border-box-grey">
+							<header class="bar-title bg-blue-dark-27 list">
+								<h4>11:10 Durbanville
+									<i class="icon-tv-icon pull-right"></i>
+								</h4>
+
+							</header>
+							<article class="row flex-container border-box-grey list">
+								<div class="flex-container--vertical align-center">
+									<span class="">4</span>
+									<p class="fst-italic">(2)</p>
+								</div>
+								<div class="flex-container--vertical sp-center">
+									<img src="img/icon-tshirt-blackTs.gif">
+									<span>4F1-1</span>
+								</div>
+								<div class="flex-container--vertical description-list push-right">
+									<h3>
+										<a href="#">Aunty Ann</a>
+									</h3>
+									<dl>
+										<dt>J:</dt> 
+										<dd>Bass, D</dd>
+										<dt>T:</dt> 
+										<dd>Bailey, K</dd>
+									</dl>
+								</div>
+								<div class="btn btn--default btn--sm"><a href="#">7/4</a></div>
+							</article>
+							<article class="row flex-container border-box-grey list">
+								<div class="flex-container--vertical align-center">
+									<span class="">4</span>
+									<p class="fst-italic">(2)</p>
+								</div>
+								<div class="flex-container--vertical sp-center">
+									<img src="img/icon-tshirt-greenTs.gif">
+									<span>4F1-1</span>
+								</div>
+								<div class="flex-container--vertical description-list push-right">
+									<h3>
+										<a href="#">Aunty Ann</a>
+									</h3>
+									<dl>
+										<dt>J:</dt> 
+										<dd>Bass, D</dd>
+										<dt>T:</dt> 
+										<dd>Bailey, K</dd>
+									</dl>
+								</div>
+								<div class="btn btn--default btn--sm"><a href="#">7/4</a></div>
+							</article>
+							<article class="row flex-container border-box-grey list">
+								<div class="flex-container--vertical align-center">
+									<span class="">4</span>
+									<p class="fst-italic">(2)</p>
+								</div>
+								<div class="flex-container--vertical sp-center">
+									<img src="img/icon-tshirt-purpleTs.gif">
+									<span>4F1-1</span>
+								</div>
+								<div class="flex-container--vertical description-list push-right">
+									<h3>
+										<a href="#">Aunty Ann</a>
+									</h3>
+									<dl>
+										<dt>J:</dt> 
+										<dd>Bass, D</dd>
+										<dt>T:</dt> 
+										<dd>Bailey, K</dd>
+									</dl>
+								</div>
+								<div class="btn btn--default btn--sm"><a href="#">7/4</a></div>
+							</article>
+							<article class="row flex-container border-box-grey list">
+								<div class="flex-container--vertical align-center">
+									<span class="">4</span>
+									<p class="fst-italic">(2)</p>
+								</div>
+								<div class="flex-container--vertical sp-center">
+									<img src="img/icon-tshirt-redTs.gif">
+									<span>4F1-1</span>
+								</div>
+								<div class="flex-container--vertical description-list push-right">
+									<h3>
+										<a href="#">Aunty Ann</a>
+									</h3>
+									<dl>
+										<dt>J:</dt> 
+										<dd>Bass, D</dd>
+										<dt>T:</dt> 
+										<dd>Bailey, K</dd>
+									</dl>
+								</div>
+								<div class="btn btn--default btn--sm"><a href="#">7/4</a></div>
+							</article>
+							<article class="row flex-container border-box-grey list">
+								<div class="flex-container--vertical align-center">
+									<span class="">4</span>
+									<p class="fst-italic">(2)</p>
+								</div>
+								<div class="flex-container--vertical sp-center">
+									<img src="img/icon-tshirt-yellowTs.gif">
+									<span>4F1-1</span>
+								</div>
+								<div class="flex-container--vertical description-list push-right">
+									<h3>
+										<a href="#">Aunty Ann</a>
+									</h3>
+									<dl>
+										<dt>J:</dt> 
+										<dd>Bass, D</dd>
+										<dt>T:</dt> 
+										<dd>Bailey, K</dd>
+									</dl>
+								</div>
+								<div class="btn btn--default btn--sm"><a href="#">7/4</a></div>
+							</article>
+						</section>
+					</div>
+				</div>
+			</article>
+		</section>
 	</section>
 </body>
 </html>

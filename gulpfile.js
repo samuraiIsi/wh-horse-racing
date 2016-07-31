@@ -11,7 +11,7 @@ gulp.task('scripts', function(){
 });
  
 gulp.task('styles', function(){
-	return sass('scss/**/*.scss', {style: 'compressed'})
+	return sass('scss/**/**/*.scss', {style: 'compressed'})
 	.pipe(gulp.dest('css/'));
 
 });
