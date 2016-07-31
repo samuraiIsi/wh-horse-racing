@@ -17,6 +17,14 @@ https://www.npmjs.com/package/svg-embed
 ## Modernizr
 https://modernizr.com/
 
+## CSS
+data-bind="css: "
+http://knockoutjs.com/documentation/css-binding.html
+
+## html
+data-bind="text: "
+
+
 ## Ideas from
 BBC
 El Pais
